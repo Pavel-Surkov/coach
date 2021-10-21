@@ -1,2 +1,2 @@
 # coach
-A Coachh project
+A Coach project
