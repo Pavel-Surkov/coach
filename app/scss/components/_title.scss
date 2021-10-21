@@ -1,0 +1,36 @@
+.title {
+	margin: 0;
+	color: $black-300;
+	&_size {
+		&-l {
+			font-size: 8rem;
+			line-height: 1.2;
+			color: $light-200;
+		}
+		&-m {
+			font-size: 5.6rem;
+			line-height: 1.143;
+			margin-top: 12px;
+		}
+		&-s {
+			font-size: 2.8rem;
+			line-height: 1.36;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.title {
+		&_size {
+			&-l,
+			&-m  {
+				font-size: 3.5rem;
+				line-height: 1.43;
+			}
+			&-s {
+				font-size: 1.8rem;
+				line-height: 1.39;
+			}
+		}
+	}
+}

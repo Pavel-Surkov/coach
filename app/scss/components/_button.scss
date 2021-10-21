@@ -1,0 +1,42 @@
+.btn {
+	color: $white;
+	background: $orange-400;
+	box-sizing: border-box;
+	text-align: center;
+	&_size {
+		&-l {
+			font-size: 1.8rem;
+			line-height: 1.39; 
+			padding: 1.055em 2em;
+		}
+		&-m {
+			font-size: 1.4rem;
+			line-height: 1.57;
+			padding: .643em 1.79em;
+		}
+	}
+	&_submit {
+		width: 200px;
+		padding: 1em auto;
+	}
+	&_transparent {
+		background: transparent;
+		color: $orange-400;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.btn {
+		&_size {
+			&-l {
+				font-size: 1.8rem;
+				line-height: 1.39;
+				width: 100%;
+			}
+			&-m {
+				font-size: 1.8rem;
+				padding: .833em 1.389em;
+			}
+		}
+	}
+}

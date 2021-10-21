@@ -3,10 +3,22 @@
 // -----------------------------------------------------------------------------
 
 // Base
-$font: '';
+$font: 'Raleway', Arial, sans-serif;
 $base-font-size: 16px;
 $base-path: '../';
 
 // Colors
-$white: #fff;
-$black: #222;
+$white: #FFF;
+$light-100: #FAFAFA;
+$light-200: #FBFBFB;
+$light-400: #E8E8E8;
+
+$black: #000;
+$black-100: #0D2221;
+$black-300: #323232;
+
+$gray-700: #797979;
+
+$orange-400: #E89522;
+$blue-600: #0057BE;
+
