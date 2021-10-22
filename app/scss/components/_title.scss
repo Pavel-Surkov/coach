@@ -19,10 +19,20 @@
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.title {
+		&_size {
+			&-l {
+				font-size: 3.5rem;
+				line-height: 1.43;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.title {
 		&_size {
-			&-l,
 			&-m  {
 				font-size: 3.5rem;
 				line-height: 1.43;
