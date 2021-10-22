@@ -3,6 +3,10 @@
 	background: $orange-400;
 	box-sizing: border-box;
 	text-align: center;
+	&:hover,
+	&:focus {
+		opacity: .85;
+	}
 	&_size {
 		&-l {
 			font-size: 1.8rem;
