@@ -1,0 +1,140 @@
+.faq {
+	&-wrapper {
+		position: relative;
+		margin-top: 100px;
+		padding-bottom: 100px;
+	}
+	& .container {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding-left: calc((100% - 1744px) / 2);
+		box-sizing: content-box;
+	}
+	&__img {
+		width: calc(100% + 15px);
+		height: 100%;
+		min-height: 662px;
+		max-width: none;
+		object-fit: cover;
+	}
+	&-text {
+		padding-right: 60px;
+	}
+	&-accordeon {
+		margin-top: 40px;
+		&__title {
+			@include flex();
+			& p {
+				margin: 0;
+				margin-right: auto;
+				font-size: 2rem;
+				line-height: 1.4;
+				font-weight: 700;
+			}
+			padding-bottom: 18px;
+			border-bottom: 4px solid $orange-400;
+			position: relative;
+			&:hover {
+				cursor: pointer;
+			}
+			&_active rect:first-child {
+				visibility: hidden;
+			}
+		}
+		&__item {
+			margin-bottom: 56px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__text {
+			display: none;
+			& p {
+				font-size: 2rem;
+				margin: 0;
+				margin-top: 16px;
+				line-height: 1.4;
+				font-weight: 500;
+			}
+			&_opened {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1743px) {
+	.faq {
+		& .container {
+			padding-left: calc((100% - 1329px) / 2);
+		}
+	}
+}
+
+@media screen and (max-width: 1329px) {
+	.faq {
+		& .container {
+			position: relative;
+			padding: 0 15px;
+			box-sizing: border-box;
+		}
+		& .container-fluid {
+			max-width: 970px;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-sizing: border-box;
+		}
+		&__img {
+			width: 100%;
+			max-width: 100%;
+			min-height: auto;
+		}
+		&-text {
+			padding-right: 10px;
+		}
+		&-accordeon {
+			margin-top: 32px;
+			&__item {
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.faq {
+		& .container-fluid {
+			max-width: 720px;
+		}
+		&-wrapper {
+			margin-top: 50px;
+			padding-bottom: 50px;
+		}
+		&-text {
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.faq {
+		& .container {
+			padding: 0 16px;
+		}
+		& .container-fluid {
+			max-width: 540px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.faq {
+		& .container-fluid {
+			max-width: 100%;
+		}
+	}
+}
