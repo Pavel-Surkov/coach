@@ -12,12 +12,12 @@
 		&-l {
 			font-size: 1.8rem;
 			line-height: 1.39; 
-			padding: 1.055em 2em;
+			padding: 1.055em .8em;
 		}
 		&-m {
 			font-size: 1.4rem;
 			line-height: 1.57;
-			padding: .643em 1.79em;
+			padding: .643em .8em;
 		}
 	}
 	&_submit {
@@ -27,10 +27,16 @@
 	&_transparent {
 		background: transparent;
 		color: $orange-400;
+		border: 1px solid $orange-400;
+		&:hover,
+		&:focus {
+			color: $white;
+			background: $orange-400;
+		}
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	.btn {
 		&_size {
 			&-l {

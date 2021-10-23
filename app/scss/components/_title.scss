@@ -10,7 +10,7 @@
 		&-m {
 			font-size: 5.6rem;
 			line-height: 1.143;
-			margin-top: 12px;
+			margin-top: 16px;
 		}
 		&-s {
 			font-size: 2.8rem;
@@ -22,20 +22,11 @@
 @media screen and (max-width: 991px) {
 	.title {
 		&_size {
-			&-l {
+			&-l,
+			&-m {
 				font-size: 3.5rem;
 				line-height: 1.43;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.title {
-		&_size {
-			&-m  {
-				font-size: 3.5rem;
-				line-height: 1.43;
+				margin-top: 12px;
 			}
 			&-s {
 				font-size: 1.8rem;
