@@ -1,0 +1,151 @@
+.explanation {
+	&-wrapper {
+		padding: 200px 0;
+		padding-bottom: 100px;
+	}
+	&__title {
+		&-wrapper {
+			text-align: center;
+		}
+	}
+	&__item {
+		margin-top: 56px;
+	}
+	&__number {
+		display: grid;
+		place-items: center;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
+		border-radius: 50%;
+		background: $orange-400;
+		position: relative;
+		z-index: 5;
+		flex-shrink: 0;
+		& span {
+			font-size: 3.2rem;
+			line-height: 1.25;
+			margin-top: -3px;
+			font-weight: 600;
+			color: $white;
+			z-index: 5;
+		}
+	}
+	&-center {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1128px;
+			height: 0;
+			border-bottom: 1px dashed $blue-600;
+			z-index: 0;
+		}
+	}
+	&__note {
+		min-height: 164px;
+		margin-top: 32px;
+		padding: 40px;
+		text-align: center;
+		background: $light-100;
+		display: grid;
+		place-items: center;
+		& p {
+			margin: auto 0;
+			font-size: 1.8rem;
+			font-weight: 600;
+			line-height: 1.556;
+		}
+	}
+	&__btn {
+		&-wrapper {
+			margin-top: 48px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1743px) {
+	.explanation {
+		&-center::before {
+			width: 880px;
+		}
+	}	
+}
+
+@media screen and (max-width: 1329px) {
+	.explanation {
+		&-center::before {
+			width: 600px;
+		}
+	}	
+}
+
+@media screen and (max-width: 991px) {
+	.explanation {
+		&-wrapper {
+			padding: 50px 0;
+		}
+		&__item {
+			@include flex(row, center);
+			margin-top: 10px;
+		}
+		&__title {
+			&-wrapper {
+				text-align: left;
+			}
+		}
+		&-center {
+			&::before {
+				width: 0;
+				height: 250px;
+				border: none;
+				left: calc(50% - 6px);
+				border-right: 1px dashed $blue-600;
+				transform: translateY(-50%);
+			}
+		}
+		&__note {
+			margin: 0;
+			padding: 30px 20px;
+			width: 100%;
+			min-height: auto;
+		}
+		&__number {
+			margin-right: 10px;
+			width: 40px;
+			height: 40px;
+			& span {
+				font-size: 1.6rem;
+				line-height: 1.56;
+				margin: 0;
+				margin-right: -1px;
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	.explanation {
+		&-center {
+			&::before {
+				height: 300px;
+				transform: translateY(-45%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.explanation {
+		&-center {
+			&::before {
+				height: 380px;
+				transform: translateY(-42%);
+			}
+		}
+	}
+}
