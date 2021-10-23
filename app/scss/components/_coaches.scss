@@ -1,0 +1,124 @@
+.coaches {
+	&-wrapper {
+		padding: 100px 0;
+	}
+	&__title {
+		&-wrapper {
+			text-align: center;
+			margin-bottom: 56px;
+		}
+	}
+	&-card {
+		background: $light-100;
+		padding: 40px;
+		padding-bottom: 48px;
+		height: 100%;
+		&__header {
+			@include flex(row, center);
+			& img {
+				margin-right: 32px;
+			}
+		}
+		&__name {
+			margin-right: auto;
+			&-btn {
+				margin-top: 12px;
+				font-size: 1.4rem;
+				line-height: 1.57;
+				padding: .643em 2em;
+			}
+		}
+		&__body {
+			margin-top: 32px;
+		}
+		&__subtitle {
+			margin-bottom: 6px;
+		}
+		&__item {
+			font-weight: 500;
+			font-size: 1.8rem;
+			line-height: 1.44;
+			padding-left: 20px;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 3px;
+				height: 3px;
+				left: 5px;
+				border-radius: 50%;
+				top: 11px;
+				background: $black-300;
+			}
+		}
+		&__block {
+			margin-top: 24px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		&__text {
+			margin: 0;
+			font-weight: 500;
+			font-size: 1.8rem;
+			line-height: 1.44;
+		}
+	}
+}
+
+@media screen and (max-width: 1329px) {
+	.coaches {
+		&-card {
+			margin-top: 30px;
+			&_first {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.coaches {
+		&-wrapper {
+			padding: 50px 0;
+			padding-bottom: 0;
+		}
+		&-card {
+			height: auto;
+			&__bottom {
+				margin-top: 36px;
+				text-align: center;
+			}
+		}
+		&__title {
+			&-wrapper {
+				margin-bottom: 22px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.coaches {
+		&-card {
+			margin: 0 -16px;
+			margin-top: 30px;
+			padding: 40px 16px;
+			padding-bottom: 50px;
+			&_first {
+				margin-top: 0;
+			}
+			&__header {
+				@include flex(column, center);
+				& img {
+					margin: 0;
+				}
+			}
+			&__name {
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 10px;
+			}
+		}
+	}
+}

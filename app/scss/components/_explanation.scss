@@ -10,6 +10,8 @@
 	}
 	&__item {
 		margin-top: 56px;
+		@include flex(column, center);
+		height: calc(100% - 56px);
 	}
 	&__number {
 		display: grid;
@@ -53,6 +55,7 @@
 		background: $light-100;
 		display: grid;
 		place-items: center;
+		flex-grow: 1;
 		& p {
 			margin: auto 0;
 			font-size: 1.8rem;
@@ -96,6 +99,7 @@
 		&__title {
 			&-wrapper {
 				text-align: left;
+				margin-bottom: 22px;
 			}
 		}
 		&-center {
