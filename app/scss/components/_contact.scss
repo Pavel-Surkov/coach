@@ -1,6 +1,7 @@
 .contact {
 	&-wrapper {
 		padding: 100px 0;
+		padding-bottom: 200px;
 	}
 	&__form {
 		&-block {
@@ -52,7 +53,7 @@
 		& textarea {
 			background: $white;
 			border: 1px solid $gray-700;
-			color: $black-300;
+			color: $black-100;
 			font-weight: 500;
 			font-size: 1.6rem;
 			line-height: 1.5;

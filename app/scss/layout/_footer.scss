@@ -5,7 +5,6 @@
 	&-wrapper {
 		background: $light-100;
 		padding-top: 50px;
-		margin-top: 50px;
 		overflow: hidden;
 	}
 	&__logo {
@@ -121,9 +120,6 @@
 
 @media screen and (max-width: 1329px) {
 	.footer {
-		&-wrapper {
-			margin: 0;
-		}
 		&-form {
 			&__wrapper {
 				padding-left: 0;
