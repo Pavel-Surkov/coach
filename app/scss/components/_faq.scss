@@ -8,8 +8,8 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding-left: calc((100% - 1744px) / 2);
-		box-sizing: content-box;
+		padding-left: calc(((100% - 1744px) / 2) + 15px);
+		box-sizing: border-box;
 	}
 	&__img {
 		width: calc(100% + 15px);
@@ -67,7 +67,7 @@
 @media screen and (max-width: 1743px) {
 	.faq {
 		& .container {
-			padding-left: calc((100% - 1329px) / 2);
+			padding-left: calc(((100% - 1320px) / 2) + 15px);
 		}
 	}
 }

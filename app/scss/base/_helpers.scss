@@ -15,3 +15,10 @@ a {
 .is-locked {
 	overflow: hidden;
 }
+
+.link {
+	&:hover,
+	&:focus {
+		opacity: .8;
+	}
+}

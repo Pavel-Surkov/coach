@@ -147,8 +147,18 @@
 	.explanation {
 		&-center {
 			&::before {
-				height: 380px;
-				transform: translateY(-42%);
+				height: 360px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 377px) {
+	.explanation {
+		&-center {
+			&::before {
+				height: 410px;
+				transform: translateY(-43%);
 			}
 		}
 	}

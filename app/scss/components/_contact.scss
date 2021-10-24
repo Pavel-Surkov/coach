@@ -1,4 +1,7 @@
 .contact {
+	&-wrapper {
+		padding: 100px 0;
+	}
 	&__form {
 		&-block {
 			background: $blue-600;
@@ -87,6 +90,14 @@
 			&-block {
 				padding: 60px;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.contact {
+		&-wrapper {
+			padding: 50px 0;
 		}
 	}
 }
