@@ -131,9 +131,13 @@
 					color: $gray-200;
 				}
 			}
+			&__grid {
+				grid-template-rows: repeat(2, 55px) 85px;
+			}
 			&__submit {
 				max-width: 50%;
 				margin: 0 auto;
+				margin-top: 30px;
 			}
 		}
 		&__navigation {
@@ -190,7 +194,6 @@
 			&__submit {
 				grid-area: auto;
 				max-width: none;
-				margin-top: 30px;
 				font-size: 1.8rem;
 				line-height: 1.39;
 				font-weight: 800;

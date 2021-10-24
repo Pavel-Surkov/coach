@@ -1,3 +1,51 @@
 .planning {
-	
+	&-coaches {
+		&__wrapper {
+			margin-bottom: 200px;
+		}
+		&__title {
+			font-size: 4.8rem;
+			line-height: 1.17;
+			color: $black-300;
+		}
+		&__note {
+			margin: 0;
+			margin-top: 24px;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 1.4;
+			color: $black-100;
+		}
+		&__btn {
+			margin-top: 32px;
+			padding: 1em 2.25em;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.planning {
+		&-coaches {
+			&__wrapper {
+				padding-top: 51px;
+				margin-bottom: 50px;
+			}
+			&__title {
+				font-size: 3.5rem;
+				line-height: 1.4285;
+				&-wrapper {
+					width: 100%;
+				}
+			}
+			&__note {
+				margin-top: 20px;
+				font-size: 1.4rem;
+				line-height: 1.785;
+			}
+			&__btn {
+				width: 100%;
+				margin-top: 45px;
+			}
+		}
+	}
 }

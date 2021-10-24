@@ -4310,7 +4310,8 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  font-weight: 800; }
+  font-weight: 800;
+  display: inline-block; }
   .btn:hover, .btn:focus {
     opacity: .85; }
   .btn_size-l {
@@ -4549,9 +4550,12 @@ a {
       color: #B2B2B2; }
     .footer-form input::placeholder {
       color: #B2B2B2; }
+  .footer-form__grid {
+    grid-template-rows: repeat(2, 55px) 85px; }
   .footer-form__submit {
     max-width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 30px; }
   .footer__navigation {
     padding-top: 0;
     margin-top: 37px; }
@@ -4584,7 +4588,6 @@ a {
   .footer-form__submit {
     grid-area: auto;
     max-width: none;
-    margin-top: 30px;
     font-size: 1.8rem;
     line-height: 1.39;
     font-weight: 800;
@@ -5348,7 +5351,7 @@ a {
   background: #FAFAFA;
   padding: 88px 0;
   padding-bottom: 96px;
-  margin-bottom: 100px; }
+  margin-bottom: 200px; }
 
 .free__note {
   margin: 0;
@@ -5502,3 +5505,40 @@ a {
     top: 290px; }
   .home-wrapper::after {
     top: 270px; } }
+
+.planning-coaches__wrapper {
+  margin-bottom: 200px; }
+
+.planning-coaches__title {
+  font-size: 4.8rem;
+  line-height: 1.17;
+  color: #323232; }
+
+.planning-coaches__note {
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #0D2221; }
+
+.planning-coaches__btn {
+  margin-top: 32px;
+  padding: 1em 2.25em; }
+
+@media screen and (max-width: 991px) {
+  .planning-coaches__wrapper {
+    padding-top: 51px;
+    margin-bottom: 50px; }
+  .planning-coaches__title {
+    font-size: 3.5rem;
+    line-height: 1.4285; }
+    .planning-coaches__title-wrapper {
+      width: 100%; }
+  .planning-coaches__note {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.785; }
+  .planning-coaches__btn {
+    width: 100%;
+    margin-top: 45px; } }
