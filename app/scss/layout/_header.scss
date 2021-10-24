@@ -1,14 +1,18 @@
 .header {
 	z-index: 20;
-	position: relative;
+	&_positioned {
+		position: relative;
+	}
 	&-wrapper {
 		background: $blue-600;
 		padding-top: 64px;
 		margin-bottom: -1px;
 	}
-	&_logo {
+	&__logo {
 		&-link {
 			display: inline-block;
+			position: relative;
+			z-index: 30;
 		}
 	}
 	&__menu {
@@ -16,6 +20,8 @@
 		height: 100%;
 		&-button {
 			@include flex(row, center);
+			position: relative;
+			z-index: 30;
 			&:hover,
 			&:focus {
 				opacity: .85;
@@ -32,7 +38,7 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	.header {
 		&-wrapper {
 			padding: 14px 0;

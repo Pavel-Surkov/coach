@@ -68,11 +68,13 @@
 	'components/explanation',
 	'components/coaches',
 	'components/faq',
-	'components/contact';
+	'components/contact',
+	'components/top';
 
 // 7. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+	'pages/planning';
 
 // 8. Themes
 @import
