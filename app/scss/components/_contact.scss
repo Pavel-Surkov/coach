@@ -97,18 +97,32 @@
 @media screen and (max-width: 991px) {
 	.contact {
 		&-wrapper {
-			padding: 50px 0;
+			background: $blue-600;
+			overflow: hidden;
+			padding: 0;
+		}
+		&__form {
+			&-block {
+				overflow: visible;
+				&::before {
+					width: 1000px;
+				}
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.contact {
+		&__title {
+			&-wrapper {
+				margin-bottom: 25px;
+			}
+		}
 		&__form {
 			&-block {
 				padding: 46px 16px;
 				padding-bottom: 155px;
-				margin: 0 -16px;
 				&::before {
 					top: 780px;
 					height: 160px;
@@ -140,6 +154,19 @@
 				grid-area: auto;
 				margin-top: 40px;
 				padding: .833em 1em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.contact {
+		&-wrapper {
+			padding: 0;
+		}
+		&__form {
+			&-block {
+				margin: 0 -16px;
 			}
 		}
 	}
