@@ -1,8 +1,7 @@
 .faq {
 	&-wrapper {
 		position: relative;
-		margin-top: 100px;
-		padding-bottom: 100px;
+		margin-top: 200px;
 	}
 	& .container {
 		position: absolute;
@@ -25,16 +24,20 @@
 		margin-top: 40px;
 		&__title {
 			@include flex();
+			padding-bottom: 18px;
+			border-bottom: 4px solid $orange-400;
+			position: relative;
+			& svg {
+				flex-shrink: 0;
+			}
 			& p {
 				margin: 0;
 				margin-right: auto;
 				font-size: 2rem;
 				line-height: 1.4;
 				font-weight: 700;
+				padding-right: 10px;
 			}
-			padding-bottom: 18px;
-			border-bottom: 4px solid $orange-400;
-			position: relative;
 			&:hover {
 				cursor: pointer;
 			}
@@ -60,6 +63,15 @@
 			&_opened {
 				display: block;
 			}
+		}
+	}
+	&__faq {
+		&-wrapper {
+			padding: 0;
+			margin: 0;
+		}
+		&-accordeon {
+			margin-top: 90px;
 		}
 	}
 }
@@ -93,6 +105,9 @@
 		&-text {
 			padding-right: 10px;
 		}
+		&__contact-wrapper {
+			padding: 100px 0;
+		}
 		&-accordeon {
 			margin-top: 32px;
 			&__item {
@@ -102,7 +117,13 @@
 				}
 			}
 		}
+		&__faq {
+			&-wrapper {
+				margin-top: 50px;
+			}
+		}
 	}
+	
 }
 
 @media screen and (max-width: 991px) {
@@ -112,10 +133,19 @@
 		}
 		&-wrapper {
 			margin-top: 50px;
-			padding-bottom: 50px;
 		}
 		&-text {
 			padding: 0;
+		}
+		&__faq {
+			&-wrapper {
+				padding: 0;
+				margin: 0;
+			}
+		}
+		&__contact-wrapper {
+			padding: 0;
+			margin-top: 50px;
 		}
 	}
 }

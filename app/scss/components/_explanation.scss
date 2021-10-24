@@ -1,7 +1,6 @@
 .explanation {
 	&-wrapper {
-		padding: 200px 0;
-		padding-bottom: 100px;
+		padding-top: 200px;
 	}
 	&__title {
 		&-wrapper {
@@ -90,7 +89,7 @@
 @media screen and (max-width: 991px) {
 	.explanation {
 		&-wrapper {
-			padding: 50px 0;
+			padding-top: 50px;
 		}
 		&__item {
 			@include flex(row, center);

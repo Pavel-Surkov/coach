@@ -41,6 +41,8 @@
 		text-align: center;
 		padding-top: 8px;
 		padding-bottom: 110px;
+		position: relative;
+		z-index: 20;
 	}
 	&__item {
 		margin-bottom: 48px;
