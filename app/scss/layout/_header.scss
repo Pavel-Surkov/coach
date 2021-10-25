@@ -26,6 +26,12 @@
 			&:focus {
 				opacity: .85;
 			}
+			& .menu-close {
+				display: none;
+			}
+			& .menu-open {
+				display: block;
+			}
 			&-text {
 				font-size: 2rem;
 				line-height: 1.4;
@@ -48,6 +54,18 @@
 				& img {
 					width: 110px;
 					height: 43px;
+				}
+			}
+		}
+		&__menu {
+			&-button {
+				&.btn_close {
+					& .menu-close {
+						display: block;
+					}
+					& .menu-open {
+						display: none;
+					}
 				}
 			}
 		}

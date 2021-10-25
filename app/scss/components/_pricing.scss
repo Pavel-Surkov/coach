@@ -1,0 +1,130 @@
+.pricing {
+	&-wrapper {
+		margin-bottom: 200px;
+	}
+	&-item {
+		&__wrapper {
+			background: $blue-600;
+			padding: 24px 20px;
+		}
+		&__title {
+			text-align: center;
+			color: $white;
+		}
+		&__body {
+			padding: 40px 32px;
+			background: $light-100;
+		}
+		&__prices {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+		}
+		&__price {
+			display: block;
+			text-align: center;
+			font-size: 3.2rem;
+			line-height: 1.25;
+			font-weight: 800;
+			color: $blue-600;
+			&_old {
+				display: block;
+				text-align: center;
+				font-size: 2.4rem;
+				line-height: 1.33;
+				font-weight: 700;
+				color: $red-100;
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 19px;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: $red-100;
+				}
+			}
+			&-block {
+				background: $white;
+				min-height: 136px;
+				@include flex(column, center, center);
+			}
+		}
+		&__btn {
+			padding: 1em 4.18em;
+			&-wrapper {
+				margin-top: 32px;
+				text-align: center;
+			}
+		}
+		&__level {
+			margin: 0;
+			margin-bottom: 7px;
+			font-weight: 600;
+			font-size: 1.6rem;
+			line-height: 1.5;
+			color: $black-100;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1329px) {
+	.pricing {
+		&-item {
+			margin-top: 30px;
+			&_first {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.pricing {
+		&-wrapper {
+			padding-bottom: 50px;
+			margin-bottom: 0;
+		}
+		&-item {
+			&__title {
+				font-size: 2rem;
+				line-height: 1.4;
+			}
+			&__wrapper {
+				padding: 18px;
+			}
+			&__body {
+				padding: 20px 14px;
+				padding-bottom: 25px;
+			}
+			&__price {
+				font-size: 2.5rem;
+				line-height: 1.2;
+				&_old {
+					font-size: 1.8rem;
+					line-height: 1.39;
+					&::before {
+						top: 15px;
+					}
+				}
+				&-block {
+					min-height: 105px;
+				}
+			}
+			&__prices {
+				grid-gap: 7px;
+			}
+			&__btn {
+				padding: .83em 1.4em;
+				&-wrapper {
+					margin-top: 20px;
+				}
+			}
+			&__level {
+				margin: 0;
+			}
+		}
+	}
+}

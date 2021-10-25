@@ -8,6 +8,7 @@ const menuBtn = document.querySelector('.header__menu-button');
 menuBtn.onclick = () => {
 	if (menu) {
 		menu.classList.toggle('menu_active');
+		menuBtn.classList.toggle('btn_close');
 		document.documentElement.classList.toggle('is-locked');
 	}
 	if (header) {

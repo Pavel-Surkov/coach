@@ -56,6 +56,15 @@
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.menu {
+		&__item {
+			font-size: 3.5rem;
+			line-height: 1.43;
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.menu {
 		&-wrapper {

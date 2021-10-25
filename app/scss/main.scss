@@ -70,14 +70,16 @@
 	'components/contact',
 	'components/faq',
 	'components/top',
-	'components/free';
+	'components/free',
+	'components/packages',
+	'components/pricing';
 
 // 7. Page-specific styles
 @import
   'pages/home',
 	'pages/planning',
 	'pages/contact-us';
-	
+
 // 8. Themes
 @import
   'themes/default';
