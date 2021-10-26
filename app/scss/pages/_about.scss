@@ -1,0 +1,28 @@
+.about {
+	&_explanation {
+		& .explanation {
+			&-wrapper {
+				padding-top: 128px;
+			}
+			&__item {
+				margin-top: 0;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.about {
+		&_explanation {
+			& .explanation {
+				&__item {
+					margin-top: 10px;
+				}
+				&-wrapper {
+					padding: 50px 0;
+				}
+			}
+		}
+	}
+}

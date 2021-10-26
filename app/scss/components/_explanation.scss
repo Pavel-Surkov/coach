@@ -47,14 +47,13 @@
 		}
 	}
 	&__note {
-		min-height: 164px;
 		margin-top: 32px;
 		padding: 40px;
 		text-align: center;
 		background: $light-100;
-		display: grid;
-		place-items: center;
-		flex-grow: 1;
+		@include flex(column, center);
+		flex-shrink: 2;
+		flex-grow: 30;
 		& p {
 			margin: auto 0;
 			font-size: 1.8rem;
