@@ -5,19 +5,38 @@
 		top: 0;
 		padding-left: calc(((100% - 1744px) / 2) + 15px);
 		box-sizing: border-box;
+		height: 100%;
+		& .row {
+			height: 100%;
+		}
 	}
 	&-wrapper {
 		background: $light-100;
 		position: relative;
 	}
 	&-text {
-		padding: 166px 0;
+		margin: 0 auto;
+		&__wrapper {
+			@include flex(row, center);
+			padding: 15px;
+			box-sizing: border-box;
+		}
 		&__text {
 			margin: 0;
 			margin-top: 24px;
 			font-size: 2rem;
 			line-height: 1.4;
 			font-weight: 500;
+			&_founders {
+				margin: 0;
+				font-weight: 400;
+				&:first-child {
+					margin-bottom: 14px;
+				}
+			}
+		}
+		&_founders {
+			padding: 100px 0;
 		}
 		&__btn {
 			margin-top: 32px;
@@ -33,15 +52,21 @@
 		min-height: 640px;
 		background: linear-gradient(rgba($black-100, .3)), image('about-video.jpg') no-repeat 50% / cover;
 	}
+	&_founders {
+		& .about-video {
+			min-height: 520px;
+		}
+		& .about-wrapper {
+			margin-top: 120px;
+			background: $white;
+		}
+	}
 }
 
 @media screen and (max-width: 1743px) {
 	.about {
 		& .container {
 			padding-left: calc(((100% - 1320px) / 2) + 15px);
-		}
-		&-text {
-			padding-right: 68px;
 		}
 	}
 }
@@ -50,10 +75,6 @@
 	.about {
 		& .container {
 			padding-left: calc(((100% - 970px) / 2) + 15px);
-		}
-		&-text {
-			padding: 51px 0;
-			padding-bottom: 46px;
 		}
 		&-video {
 			min-height: 480px;
@@ -78,6 +99,9 @@
 			padding-bottom: 52px;
 		}
 		&-text {
+			&__wrapper {
+				padding: 50px 15px;
+			}
 			&__text {
 				font-size: 1.8rem;
 				line-height: 1.31;
@@ -94,6 +118,9 @@
 		&-text {
 			padding-right: 0;
 		}
+		& .container-fluid {
+			padding: 0 calc((100% - 508px) / 2);
+		}
 		&-video {
 			min-height: 215px;
 			width: 100%;
@@ -106,6 +133,7 @@
 		& .container,
 		& .container-fluid {
 			box-sizing: border-box;
+			padding: 0 16px;
 		}
 	}
 }
