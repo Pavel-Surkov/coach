@@ -5270,12 +5270,14 @@ a {
     padding: 46px 16px;
     padding-bottom: 155px; }
     .contact__form-block::before {
-      top: 780px;
+      top: auto;
+      bottom: -20px;
       height: 160px;
       background-position: 40px;
       width: 780px; }
     .contact__form-block::after {
-      top: 700px;
+      top: auto;
+      bottom: -5px;
       width: 720px;
       height: 240px;
       background-position: -70px; }
