@@ -182,11 +182,6 @@
 				}
 			}
 		}
-		& .container-fluid {
-			max-width: 540px;
-			padding: 0 16px;
-			padding-bottom: 52px;
-		}
 		&_founders {
 			& .about-video {
 				min-height: 215px;
@@ -194,19 +189,6 @@
 		}
 		&-video {
 			min-height: 215px;
-		}
-	}
-}
-
-@media screen and (max-width: 576px) {
-	.about {
-		& .container,
-		& .container-fluid {
-			box-sizing: border-box;
-			padding: 0 16px;
-		}
-		& .container-fluid {
-			padding-bottom: 52px;
 		}
 	}
 }
