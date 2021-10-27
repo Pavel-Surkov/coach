@@ -125,7 +125,8 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="free-form__submit-wrapper">
-										<button class="btn btn_orange btn_submit free-form__submit" type="submit">Send</button>
+										<button data-modal="#free-modal" class="btn btn_orange btn_submit free-form__submit"
+											type="submit">Send</button>
 									</div>
 								</div>
 							</div>
@@ -260,7 +261,8 @@
 									<input placeholder="Last name" name="surname" type="text" value="">
 									<input placeholder="Email" name="email" type="email" value="">
 									<input placeholder="Mobile phone" name="phone" type="tel" value="">
-									<button class="btn btn_orange btn_submit footer-form__submit" type="submit">Subscribe</button>
+									<button data-modal="#subscribe-modal" class="btn btn_orange btn_submit footer-form__submit"
+										type="submit">Subscribe</button>
 								</div>
 							</form>
 						</div>
@@ -298,7 +300,31 @@
 	</div>
 	<!-- End menu -->
 	<!-- Begin modal -->
-	<div class="modal"></div>
+	<div id="contact-modal" class="modal modal-submit">
+		<div class="modal-submit__wrapper">
+			<h3 class="title modal-submit__title">Thank you!</h3>
+			<p class="modal-submit__note">We have received your message.</p>
+			<button class="close" aria-label="close modal">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.8748 7.22046L24.7797 8.12542L8.12566 24.7782L7.2207 23.8739L23.8748 7.22046Z" fill="#0057BE" />
+					<path d="M8.12566 7.22046L24.7797 23.8733L23.8748 24.7789L7.2207 8.12606L8.12566 7.22046Z" fill="#0057BE" />
+				</svg>
+			</button>
+		</div>
+	</div>
+	<div id="subscribe-modal" class="modal modal-submit">
+		<div class="modal-submit__wrapper">
+			<h3 class="title modal-submit__title">Thank you!</h3>
+			<p class="modal-submit__note">You have successfully subcribed to our newsletters.</p>
+			<button class="close" aria-label="close modal">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.8748 7.22046L24.7797 8.12542L8.12566 24.7782L7.2207 23.8739L23.8748 7.22046Z" fill="#0057BE" />
+					<path d="M8.12566 7.22046L24.7797 23.8733L23.8748 24.7789L7.2207 8.12606L8.12566 7.22046Z" fill="#0057BE" />
+				</svg>
+			</button>
+		</div>
+	</div>
+	<div class="blocker"></div>
 	<!-- End modal -->
 	<!-- BEGIN scripts -->
 	<script src="js/application.js"></script>

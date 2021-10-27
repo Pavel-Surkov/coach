@@ -4266,12 +4266,6 @@ a {
   color: inherit;
   text-decoration: none; }
 
-.is-locked {
-  overflow: hidden; }
-
-.link:hover, .link:focus {
-  opacity: .8; }
-
 .title {
   margin: 0;
   color: #323232; }
@@ -5756,6 +5750,63 @@ a {
   .pricing-item__level {
     margin: 0; } }
 
+.modal {
+  display: none; }
+  .modal_active {
+    display: block; }
+  .modal-submit {
+    width: 400px;
+    min-height: 365px;
+    position: fixed;
+    z-index: 50;
+    top: 50vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    background: url("../img/icons/paper-plane.svg") no-repeat -10px 76px;
+    background-color: #FFF; }
+    .modal-submit__wrapper {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 30px;
+      padding-bottom: 55px;
+      position: relative; }
+    .modal-submit__title {
+      text-align: center;
+      margin-top: 200px;
+      font-size: 3.5rem;
+      line-height: 1.4285;
+      font-weight: 800;
+      color: #323232; }
+    .modal-submit__note {
+      text-align: center;
+      margin: 0;
+      margin-top: 10px;
+      font-size: 1.8rem;
+      line-height: 1.39;
+      font-weight: 500;
+      color: #818181; }
+
+@media screen and (max-width: 991px) {
+  .modal-submit {
+    min-height: 290px;
+    min-width: auto;
+    width: 320px;
+    background-size: 230px 196px;
+    background-position: -10px 48px; }
+    .modal-submit__wrapper {
+      padding: 25px;
+      padding-bottom: 41px; }
+    .modal-submit__title {
+      margin-top: 130px;
+      font-size: 2.5rem;
+      line-height: 1.2; } }
+
+@media screen and (max-width: 352px) {
+  .modal-submit {
+    width: calc(100% - 32px); } }
+
 .home-wrapper {
   background: #0057BE;
   position: relative;
@@ -5929,3 +5980,53 @@ a {
 @media screen and (max-width: 576px) {
   .coaches__coaches-wrapper {
     padding-top: 0; } }
+
+.is-locked {
+  overflow: hidden; }
+
+.link:hover, .link:focus {
+  opacity: .8; }
+
+.close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 32px;
+  height: 32px; }
+  .close svg {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+  .close:hover svg {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+  .close:focus {
+    opacity: .8; }
+
+.current {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 40;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 87, 190, 0.2);
+  text-align: center;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px); }
+
+@media screen and (max-width: 991px) {
+  .close {
+    top: 20px;
+    right: 20px; } }

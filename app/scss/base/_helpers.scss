@@ -11,14 +11,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-.is-locked {
-	overflow: hidden;
-}
-
-.link {
-	&:hover,
-	&:focus {
-		opacity: .8;
-	}
-}

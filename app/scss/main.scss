@@ -72,7 +72,8 @@
 	'components/top',
 	'components/free',
 	'components/packages',
-	'components/pricing';
+	'components/pricing',
+	'components/modal';
 
 // 7. Page-specific styles
 @import
@@ -84,4 +85,5 @@
 
 // 8. Themes
 @import
-  'themes/default';
+  'themes/default',
+	'themes/media';

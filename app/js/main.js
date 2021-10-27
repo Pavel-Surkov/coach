@@ -34,3 +34,52 @@ if (accordeon) {
 		}
 	});
 }
+
+// Submit modal events
+
+document.addEventListener('click', (evt) => {
+	const modalId = evt.target.dataset.modal;
+
+	if (modalId === '#contact-modal') {
+		const modal = document.querySelector(modalId);
+		const blocker = document.querySelector('.blocker');
+
+		if (modal && blocker) {
+			evt.preventDefault();
+
+			modal.classList.add('modal_active');
+			blocker.classList.add('current');
+		}
+	}
+	if (modalId === '#subscribe-modal') {
+		const modal = document.querySelector(modalId);
+		const blocker = document.querySelector('.blocker');
+
+		if (modal && blocker) {
+			evt.preventDefault();
+
+			modal.classList.add('modal_active');
+			blocker.classList.add('current');
+		}
+	}
+	if (modalId === '#free-modal') {
+		return;
+	}
+});
+
+// Close modal
+const closeBtns = Array.from(document.querySelectorAll('.close'));
+
+if (closeBtns) {
+	closeBtns.forEach((btn) => {
+		btn.onclick = () => {
+			const modal = btn.closest('.modal');
+			const blocker = document.querySelector('.blocker');
+
+			if (modal && blocker) {
+				modal.classList.remove('modal_active');
+				blocker.classList.remove('current');
+			}
+		};
+	});
+}
