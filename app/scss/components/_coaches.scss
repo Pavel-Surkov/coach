@@ -19,8 +19,19 @@
 				margin-right: 32px;
 			}
 		}
+		&__wrapper {
+			margin-top: 24px;
+			&:first-child,
+			&:nth-child(2) {
+				margin-top: 0;
+			}
+		}
 		&__name {
 			margin-right: auto;
+			&-wrapper {
+				@include flex(row, center, space-between);
+				width: 100%;
+			}
 			&-btn {
 				margin-top: 12px;
 				font-size: 1.4rem;
@@ -66,6 +77,18 @@
 	}
 }
 
+@media screen and (max-width: 1744px) {
+	.coaches {
+		&-card {
+			&__profile {
+				&-btn {
+					margin-top: auto;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1329px) {
 	.coaches {
 		&-card {
@@ -87,6 +110,9 @@
 			&__bottom {
 				margin-top: 36px;
 				text-align: center;
+			}
+			&__wrapper {
+				margin: 0;
 			}
 		}
 		&__title {

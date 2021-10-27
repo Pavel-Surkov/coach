@@ -5052,8 +5052,29 @@ a {
         flex-wrap: no-wrap; }
     .coaches-card__header img {
       margin-right: 32px; }
+  .coaches-card__wrapper {
+    margin-top: 24px; }
+    .coaches-card__wrapper:first-child, .coaches-card__wrapper:nth-child(2) {
+      margin-top: 0; }
   .coaches-card__name {
     margin-right: auto; }
+    .coaches-card__name-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+      width: 100%; }
     .coaches-card__name-btn {
       margin-top: 12px;
       font-size: 1.4rem;
@@ -5088,6 +5109,10 @@ a {
     font-size: 1.8rem;
     line-height: 1.44; }
 
+@media screen and (max-width: 1744px) {
+  .coaches-card__profile-btn {
+    margin-top: auto; } }
+
 @media screen and (max-width: 1329px) {
   .coaches-card {
     margin-top: 30px; }
@@ -5102,6 +5127,8 @@ a {
     .coaches-card__bottom {
       margin-top: 36px;
       text-align: center; }
+    .coaches-card__wrapper {
+      margin: 0; }
   .coaches__title-wrapper {
     margin-bottom: 22px; } }
 
@@ -5891,3 +5918,14 @@ a {
     margin-top: 10px; }
   .about_explanation .explanation-wrapper {
     padding: 50px 0; } }
+
+.coaches__coaches-wrapper {
+  padding-top: 128px; }
+
+@media screen and (max-width: 991px) {
+  .coaches__coaches-wrapper {
+    padding: 50px 0; } }
+
+@media screen and (max-width: 576px) {
+  .coaches__coaches-wrapper {
+    padding-top: 0; } }

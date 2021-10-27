@@ -1,0 +1,27 @@
+.coaches {
+	&__coaches {
+		&-wrapper {
+			padding-top: 128px;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.coaches {
+		&__coaches {
+			&-wrapper {
+				padding: 50px 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.coaches {
+		&__coaches {
+			&-wrapper {
+				padding-top: 0;
+			}
+		}
+	}
+}

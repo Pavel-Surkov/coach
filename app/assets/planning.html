@@ -146,19 +146,21 @@
 								<a href="lifecoaches.html" class="btn btn_transparent planning-coaches__btn">View all coaches</a>
 							</div>
 						</div>
-						<div class="col-12 col-lg-7">
+						<div class="coaches-card__wrapper col-12 col-lg-6">
 							<article class="coaches-card">
 								<header class="coaches-card__header">
 									<img src="./img/coaches/Joanne.png"
 										srcset="./img/coaches/Joanne.png 1x, ./img/coaches/Joanne@2x.png 2x" alt="coach">
-									<div class="coaches-card__name">
-										<p class="title title_size-s">Joanne Glover </p>
-										<button class="btn btn_orange coaches-card__name-btn">Level 1 Coach</button>
+									<div class="coaches-card__name-wrapper">
+										<div class="coaches-card__name">
+											<p class="title title_size-s">Joanne Glover</p>
+											<button class="btn btn_orange coaches-card__name-btn">Level 1 Coach</button>
+										</div>
+										<button data-profile="Joanne"
+											class="d-none d-lgs-inline-block btn btn_size-m btn_transparent coaches-card__profile-btn">
+											View profile
+										</button>
 									</div>
-									<button data-profile="Joanne"
-										class="d-none d-lgs-inline-block btn btn_size-m btn_transparent coaches-card__profile-btn">
-										View profile
-									</button>
 								</header>
 								<div class="coaches-card__body">
 									<div class="coaches-card__block">
@@ -187,7 +189,7 @@
 										</ul>
 									</div>
 									<div class="d-lgs-none coaches-card__bottom">
-										<button data-profile="Joanne" class="btn btn_size-m btn_transparent coaches-card__btn">
+										<button data-profile="Joanne" class="btn btn_size-m btn_transparent coaches-card__profile-btn">
 											View profile
 										</button>
 									</div>
