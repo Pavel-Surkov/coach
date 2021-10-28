@@ -5131,8 +5131,19 @@ a {
     height: auto; }
     .coaches-card__wrapper {
       margin: 0; }
+    .coaches-card__profile-btn, .coaches-card__profile-link {
+      padding: .7em 1.389em; }
   .coaches__title-wrapper {
     margin-bottom: 22px; } }
+
+@media screen and (max-width: 767px) {
+  .coaches .container {
+    max-width: none; }
+  .coaches-card {
+    margin: 0 -15px;
+    margin-top: 30px; }
+    .coaches-card_first {
+      margin-top: 0; } }
 
 @media screen and (max-width: 576px) {
   .coaches-card {
@@ -5762,7 +5773,7 @@ a {
   .modal_active {
     display: block; }
   .modal-coach {
-    width: 60%;
+    width: 70vw;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     max-height: 80vh;
@@ -5777,7 +5788,8 @@ a {
     .modal-coach .coaches-card {
       background: #FFF;
       padding: 48px;
-      padding-bottom: 56px; }
+      padding-bottom: 56px;
+      margin: 0; }
       .modal-coach .coaches-card__header img {
         width: 120px;
         height: 120px; }
@@ -5816,6 +5828,8 @@ a {
       color: #818181; }
 
 @media screen and (max-width: 991px) {
+  .modal-coach {
+    width: 80vw; }
   .modal-submit {
     min-height: 290px;
     min-width: auto;
@@ -5997,15 +6011,31 @@ a {
   .about_explanation .explanation-wrapper {
     padding: 50px 0; } }
 
-.coaches__coaches-wrapper {
+.coaches-page .coaches-wrapper {
   padding-top: 128px; }
 
 @media screen and (max-width: 991px) {
-  .coaches__coaches-wrapper {
+  .coaches-page .coaches-wrapper {
     padding: 50px 0; } }
 
 @media screen and (max-width: 576px) {
-  .coaches__coaches-wrapper {
+  .coaches-page .coaches-wrapper {
+    padding-top: 0; } }
+
+.coach-page .coaches-wrapper {
+  padding: 128px 0;
+  padding-bottom: 50px; }
+
+.coach-page .coaches-card__btn-wrapper {
+  margin-bottom: 50px;
+  text-align: center; }
+
+@media screen and (max-width: 991px) {
+  .coach-page .coaches-wrapper {
+    padding: 50px 0; } }
+
+@media screen and (max-width: 767px) {
+  .coach-page .coaches-wrapper {
     padding-top: 0; } }
 
 .link:hover, .link:focus {

@@ -69,8 +69,6 @@ document.addEventListener('click', (evt) => {
 });
 
 // Close modal
-const closeBtns = Array.from(document.querySelectorAll('.close'));
-
 document.addEventListener('click', (evt) => {
 	const target = evt.target;
 	const currentModal = document.querySelector('.modal_active');
@@ -93,18 +91,3 @@ document.addEventListener('click', (evt) => {
 		}
 	}
 });
-
-// if (closeBtns) {
-// 	closeBtns.forEach((btn) => {
-// 		btn.onclick = () => {
-// 			const modal = btn.closest('.modal');
-// 			const blocker = document.querySelector('.blocker');
-
-// 			if (modal && blocker) {
-// 				modal.classList.remove('modal_active');
-// 				blocker.classList.remove('current');
-// 				document.body.classList.remove('locked');
-// 			}
-// 		};
-// 	});
-// }

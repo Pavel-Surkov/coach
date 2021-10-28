@@ -1,0 +1,36 @@
+.coach-page {
+	& .coaches {
+		&-wrapper {
+			padding: 128px 0;
+			padding-bottom: 50px;
+		}
+		&-card {
+			&__btn {
+				&-wrapper {
+					margin-bottom: 50px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.coach-page {
+		& .coaches {
+			&-wrapper {
+				padding: 50px 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.coach-page {
+		& .coaches {
+			&-wrapper {
+				padding-top: 0;
+			}
+		}
+	}
+}
