@@ -53,6 +53,9 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+		&_active {
+			color: $orange-400;
+		}
 	}
 	&::-webkit-scrollbar {
 		width: 0;
