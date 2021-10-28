@@ -1,5 +1,18 @@
 'use strict';
 
+// functions
+const triggerSubmitModal = (event, id) => {
+	const modal = document.querySelector(id);
+	const blocker = document.querySelector('.blocker');
+
+	if (modal && blocker) {
+		event.preventDefault();
+
+		modal.classList.add('modal_active');
+		blocker.classList.add('current');
+	}
+};
+
 // Menu
 const menu = document.querySelector('.menu');
 const header = document.querySelector('.header');
@@ -40,30 +53,8 @@ if (accordeon) {
 document.addEventListener('click', (evt) => {
 	const modalId = evt.target.dataset.modal;
 
-	if (modalId === '#contact-modal') {
-		const modal = document.querySelector(modalId);
-		const blocker = document.querySelector('.blocker');
-
-		if (modal && blocker) {
-			evt.preventDefault();
-
-			modal.classList.add('modal_active');
-			blocker.classList.add('current');
-		}
-	}
-	if (modalId === '#subscribe-modal') {
-		const modal = document.querySelector(modalId);
-		const blocker = document.querySelector('.blocker');
-
-		if (modal && blocker) {
-			evt.preventDefault();
-
-			modal.classList.add('modal_active');
-			blocker.classList.add('current');
-		}
-	}
-	if (modalId === '#free-modal') {
-		return;
+	if (modalId) {
+		triggerSubmitModal(evt, modalId);
 	}
 });
 

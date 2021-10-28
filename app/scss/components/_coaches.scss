@@ -8,6 +8,12 @@
 			margin-bottom: 56px;
 		}
 	}
+	&__btn {
+		&-wrapper {
+			text-align: center;
+			margin-top: 56px;
+		}
+	}
 	&-card {
 		background: $light-100;
 		padding: 40px;

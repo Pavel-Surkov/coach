@@ -5023,6 +5023,10 @@ a {
   text-align: center;
   margin-bottom: 56px; }
 
+.coaches__btn-wrapper {
+  text-align: center;
+  margin-top: 56px; }
+
 .coaches-card {
   background: #FAFAFA;
   padding: 40px;
