@@ -11,6 +11,7 @@ const triggerSubmitModal = (event, id) => {
 
 		modal.classList.add('modal_active');
 		blocker.classList.add('current');
+		document.body.classList.add('locked');
 	}
 };
 
@@ -49,8 +50,7 @@ if (accordeon) {
 	});
 }
 
-// Submit modal events
-
+// Submit modal event
 document.addEventListener('click', (evt) => {
 	const modalId = evt.target.dataset.modal;
 
@@ -59,19 +59,52 @@ document.addEventListener('click', (evt) => {
 	}
 });
 
+// Coach modal event
+document.addEventListener('click', (evt) => {
+	const profileId = evt.target.dataset.profile;
+
+	if (profileId) {
+		triggerSubmitModal(evt, profileId);
+	}
+});
+
 // Close modal
 const closeBtns = Array.from(document.querySelectorAll('.close'));
 
-if (closeBtns) {
-	closeBtns.forEach((btn) => {
-		btn.onclick = () => {
-			const modal = btn.closest('.modal');
-			const blocker = document.querySelector('.blocker');
+document.addEventListener('click', (evt) => {
+	const target = evt.target;
+	const currentModal = document.querySelector('.modal_active');
 
-			if (modal && blocker) {
-				modal.classList.remove('modal_active');
-				blocker.classList.remove('current');
-			}
-		};
-	});
-}
+	if (target.matches('.current.blocker') && currentModal) {
+		const currentBlocker = document.querySelector('.blocker.current');
+
+		currentModal.classList.remove('modal_active');
+		currentBlocker.classList.remove('current');
+		document.body.classList.remove('locked');
+	} else {
+		const closeBtn = evt.target.closest('.close');
+
+		if (closeBtn) {
+			const currentBlocker = document.querySelector('.blocker.current');
+
+			currentModal.classList.remove('modal_active');
+			currentBlocker.classList.remove('current');
+			document.body.classList.remove('locked');
+		}
+	}
+});
+
+// if (closeBtns) {
+// 	closeBtns.forEach((btn) => {
+// 		btn.onclick = () => {
+// 			const modal = btn.closest('.modal');
+// 			const blocker = document.querySelector('.blocker');
+
+// 			if (modal && blocker) {
+// 				modal.classList.remove('modal_active');
+// 				blocker.classList.remove('current');
+// 				document.body.classList.remove('locked');
+// 			}
+// 		};
+// 	});
+// }

@@ -4158,6 +4158,8 @@ body {
   color: #323232;
   font-size: 1.6rem;
   height: 100%; }
+  body.locked {
+    overflow: hidden; }
 
 button, select, input, textarea {
   font-family: "Raleway", Arial, sans-serif;
@@ -5054,6 +5056,9 @@ a {
     margin-top: 24px; }
     .coaches-card__wrapper:first-child, .coaches-card__wrapper:nth-child(2) {
       margin-top: 0; }
+  .coaches-card__bottom {
+    margin-top: 36px;
+    text-align: center; }
   .coaches-card__name {
     margin-right: auto; }
     .coaches-card__name-wrapper {
@@ -5122,9 +5127,6 @@ a {
     padding-top: 100px; }
   .coaches-card {
     height: auto; }
-    .coaches-card__bottom {
-      margin-top: 36px;
-      text-align: center; }
     .coaches-card__wrapper {
       margin: 0; }
   .coaches__title-wrapper {
@@ -5758,11 +5760,31 @@ a {
   display: none; }
   .modal_active {
     display: block; }
+  .modal-coach {
+    width: 60%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-height: 80vh;
+    overflow: scroll;
+    z-index: 50;
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+    .modal-coach .coaches-card {
+      background: #FFF;
+      padding: 48px;
+      padding-bottom: 56px; }
+      .modal-coach .coaches-card__header img {
+        width: 120px;
+        height: 120px; }
   .modal-submit {
     width: 400px;
     min-height: 365px;
-    position: fixed;
     z-index: 50;
+    position: fixed;
     top: 50vh;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -5984,9 +6006,6 @@ a {
 @media screen and (max-width: 576px) {
   .coaches__coaches-wrapper {
     padding-top: 0; } }
-
-.is-locked {
-  overflow: hidden; }
 
 .link:hover, .link:focus {
   opacity: .8; }

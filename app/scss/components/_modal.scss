@@ -3,11 +3,35 @@
 	&_active {
 		display: block;
 	}
+	&-coach {
+		width: 60%;
+		box-sizing: border-box;
+		max-height: 80vh;
+		overflow: scroll;
+		z-index: 50;
+		position: fixed;
+		top: 50vh;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		& .coaches {
+			&-card {
+				background: $white;
+				padding: 48px;
+				padding-bottom: 56px;
+				&__header {
+					& img {
+						width: 120px;
+						height: 120px;
+					}
+				}
+			}
+		}
+	}
 	&-submit {
 		width: 400px;
 		min-height: 365px;
-		position: fixed;
 		z-index: 50;
+		position: fixed;
 		top: 50vh;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);

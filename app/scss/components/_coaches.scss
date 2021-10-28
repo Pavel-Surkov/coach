@@ -32,6 +32,10 @@
 				margin-top: 0;
 			}
 		}
+		&__bottom {
+			margin-top: 36px;
+			text-align: center;
+		}
 		&__name {
 			margin-right: auto;
 			&-wrapper {
@@ -113,10 +117,6 @@
 		}
 		&-card {
 			height: auto;
-			&__bottom {
-				margin-top: 36px;
-				text-align: center;
-			}
 			&__wrapper {
 				margin: 0;
 			}
